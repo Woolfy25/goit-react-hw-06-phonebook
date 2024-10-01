@@ -1,17 +1,16 @@
-import PhonebookForm from './PhonebookForm/PhonebookForm';
-import Contacts from './Contacts/Contacts';
-import Filter from './FilterContacts/FilterContacts';
-
+import "./App.css";
+import Title from "./Title/Title";
+import Form from "./Form/Form";
+import Contacts from "./Contacts/Contacts";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="title">Phonebook</h1>
-      <PhonebookForm />
-      <h2 className="title">Contacts</h2>
-      <Filter />
+    <div className="App">
+      <Title title="Phonebook" />
+      <Form />
       <Contacts />
     </div>
   );
 };
+
 export default App;
